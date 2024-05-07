@@ -1,0 +1,38 @@
+/* ------------------------------------------------ Reset all styles ----------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Inter';
+	display: flex;
+	flex-direction: column;
+	padding: 32px 15px;
+	align-items: flex-start;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*.container .container2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 2048px;
+    background-color: aqua;
+	
+}
+.container2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 2048px;
+    background-color: red;
+	
+}
