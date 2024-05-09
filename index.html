@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Google Contact</title>
 
 </head>
-<body>
+<body id="body">
     <header class="header">
-    <nav classe="nav">
-        <ul class="nav__list">
-            <li class="nav__item nav__item--border"><button href="#" class="btn btn-defautl">Crée un contact</button></li>
-            <li><button href="#" class="btn btn-primary">Contact</button></li>
-            <li><button href="#" class="btn btn-success">Fréquents</button></li>
-            <li><button href="#" class="btn btn-info">Libellés</button></li>
-        </ul>
-
-        <div>
-            <img src="Images/icons8-contacts-google.svg" alt="">
-            <a href="">Contacts</a>
-        </div>
-    </nav>
-    <div class="barre de recherche">
-        <div class="container2">
-            <span class="material-symbols-outlined">search</span>
-            <input type="text" placeholder="recherche">
-        </div>
+    <div classe="nav">
+        <img src="Images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="nav__humburger">
+       <!-- <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--border"><button href="#" class="btn btn-defautl">Crée un contact</button></li>
+                <li><button href="#" class="btn btn-primary">Contact</button></li>
+                <li><button href="#" class="btn btn-success">Fréquents</button></li>
+                <li><button href="#" class="btn btn-info">Libellés</button></li>
+            </ul>
+        </div>-->
+        <img src="Images/icons8-contacts-google.svg" alt="" class="nav__img">
+        <a href="" class="nav__title">Contacts</a>
+    </div>
+    <div class="barre">
+        <img src="Images/icons8-chercher.svg" alt="" class="barre__img">
+        <input type="text" placeholder="recherche" class="barre__recherche">
+    </div>
+    <div class="menu">
+        <img src="Images/help_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="menu__aide">
+        <img src="Images/settings_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="mnu__paramétre">
+    </div>
+    <div class="compte">
+        <img src="Images/apps_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="compte__application">
     </div>
     </header>
 
