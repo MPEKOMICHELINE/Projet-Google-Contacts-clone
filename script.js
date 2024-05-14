@@ -1,16 +1,12 @@
-// Sélectionnez l'élément html (la page entière)
-var page = document.documentElement;
 
-// Changez la couleur de fond
-page.style.backgroundColor = "#f0f8ff"; // Couleur bleu clair
+const page = document.documentElement; // Sélectionnez l'élément html (la page entière)
+page.style.backgroundColor = "#f0f8ff"; // Changez la couleur de fond
 
-
-const btnShow = document.querySelector("complement__btn");
-const answer = document.querySelector("container__creer");
-const clickBtn = function(){
-    if (answer.classList.toggle("Créer un contact")) {
-        btnShow.textContent = "Créer un contact";
-      
-      }
-};
-btnShow.addEventListener("click", clickBtn);
+const clickBtn = document.querySelector("#button");
+const afficheMain = document.querySelector("#main");
+clickBtn.addEventListener("click",() => {
+  for(let i= 0; i<afficheMain.clientHeight; i++){
+    console.log(afficheMain.innerHTML);
+  }
+}
+)
