@@ -35,8 +35,9 @@ a{
 	gap: 65px;
    
     width: 100%;
-    height: 40px;
+    height: 60px;
     align-items: center;
+    
 
 }
 .container__nav{
@@ -45,7 +46,7 @@ a{
 	align-items: center;
     width: 260px;
     height: 39px;
-    gap: 15px;
+    gap: px;
     padding: 11px 17px 11px 17px;
     
 }
@@ -57,13 +58,16 @@ a{
 .input__control{
     display: flex;
     align-items: center;
-    max-width: 450px;
-    height: 39px;
+    max-width: 800px;
+    height: 50px;
     background-color: #f4f4f4;
     border-radius: 6px;
     padding: 11px 17px 11px 17px;
     border-radius: 10px;
 }
+.input__control:hover {
+    background-color: white; /* Change la couleur de l'arrière-plan lors du survol */
+  }
 .input__control input{
     width: 100%;
     font-size: 18px;
@@ -72,14 +76,17 @@ a{
     border: 0;
     color: #000;
     background-color: #f4f4f4;
-    
-
 }
+.input__control input:hover {
+    background-color: white; /* Change la couleur de l'arrière-plan lors du survol */
+  }
+  
 .input__control img{
     width: 20px;
     position: relative;
     top:                                                                        2px;
 }
+
 .input__control input::placeholder{
     color: #838f9f;
     font-size: 16px;
@@ -154,39 +161,109 @@ a{
     padding-left: 20px;
     font-weight: bold;
 }
-
-.container__complement{
-
-}  
 .container__creer{
     grid-column: 2;
     background-color:white;
     border-radius: 20px;
     width: 85%;
-    height: 1000px;
+    height: 100%;
 }
 
 .ajouterContact{
-    width: 50%;
+    width: 70%;
     height: 100%;
 }
-.barre{
+.ajouterContact__enregistrer{
     display: flex;
-    justify-content: space-evenly;
-    background-color: aquamarine;
-}
-.photo{
-    margin-top: 10px;
-    background-color: aqua;
-
-}
-.img{
-    width: 150px;
-    height: 150px;
-    margin-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 40px;
     
 }
-.addition{
+.enregistrer__etoil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.enregistrer__img{
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.enregistrer__img:hover {
+    background-color: #EEF0F2; /* Change la couleur de l'arrière-plan lors du survol */
+  }
+.enregistrer__bnt{
+    background-color:#EEF0F2;
+    color: #838f9f;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50px;
+   
+}
+.ajouterContact__photo{
+    margin-top: 10px;
+    
+
+}
+.img__btn{
+    background-color: blue;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.ajouterContact__libelle{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.libelle__btn{
+    background-color:white;
+    color: #838f9f;
+    padding: 5px 13px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 12px;
+    border: 1px solid #838f9f;
+    
+}
+
+.libelle__btn:hover {
+    background-color: #EEF0F2; /* Change la couleur de l'arrière-plan lors du survol */
+  }
+
+.img__photo{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    
+}
+.img__addition{
     background-color: blue;
     width: 50px;
     height: 50px;
@@ -195,27 +272,52 @@ a{
     justify-content: center;
     align-items: center;
 }
-.ajouter{
+.ajouterContact__formulaire{
     display: grid;
-	grid-template-columns: 35px 1fr;
+	grid-template-columns: 45px 1fr;
+    margin-left: 50px;
    
 }
-.formulaire{
+.formulaire__img{
+    
+    margin-top: 4px;
+
+}
+    
+.img__person{
    
     width: 35px;
     height: 40px;
-    align-items: center;
+    
 
 }
-.forme{
+.formulaire__form{
     
     grid-column: 2;
-    
-   
-    width: 70%;
+    width: 100%;
     
 }
-.miche{
-    width: 100%;
-    height: 100%;
+  
+
+.form__input input{
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+.ajouterAdressemail{
+    display: flex;
+	justify-content:center;
+	align-items: center;
+    gap: 12px;
+    background-color: #d9e7f0e1;
+    width: 90%;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #046FFB;
+    margin-bottom: 20px;
+   
+    padding-left: 20px;
 }
