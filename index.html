@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+   
     <title>Google Contacts</title>
 </head>
 <body>
@@ -25,9 +25,19 @@
     </header>
     <main class="main" id="main">
         <section class="container__complement">
-            <div class="complement__btn">
+            <div class="complement__btn" id="complement__btn">
                 <img src="Images/align_flex_center_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt="">
                 <span>Créer un contact</span>
+            </div>
+            <div class="creer">
+                <div class="creer__btn">
+                    <img src="Images/person_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
+                    <span>Créer un contact</span>
+                </div>
+                <div class="creer__btn">
+                    <img src="Images/group_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span>Créer plusieurs contacts</span>
+                </div>
             </div>
             <div class="complement__btn2">
                 <img src="Images/ic--baseline-person.svg" alt="">
@@ -42,129 +52,160 @@
                 <img src="Images/align_flex_center_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt="">
             </div>
         </section>
-        <section class="container__creer">
-            <div class="ajouterContact">
-                <div class="ajouterContact__enregistrer">
-                    <img src="Images/arrow_back_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enregistrer__img">
-                    <div class="enregistrer__etoil">
-                        <img src="Images/grade_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enregistrer__img">
-                        <span class="enregistrer__bnt">Enregistrer</span>
+        <section>
+            <section class="container__creer" id="container__creer">
+                <div class="ajouterContact">
+                    <div class="ajouterContact__enregistrer">
+                        <img src="Images/arrow_back_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enregistrer__img">
+                        <div class="enregistrer__etoil">
+                            <img src="Images/grade_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enregistrer__img">
+                            <span class="enregistrer__bnt">Enregistrer</span>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-        
-                <div class = "ajouterContact__photo">
-                    <img src="Images/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png" alt="" class="img__photo">
-                    <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz.svg" alt=""  class="img__btn">
-                </div>
-                <div class="ajouterContact__libelle">
-                    <a href="#" class="libelle__btn">
-                        <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz2.svg" alt="">
-                        <span>Libellé</span>
-                    </a>
-                    
-                </div>
-              
-                <div class="ajouterContact__formulaire">
-                    <div class="formulaire__img">
-                        <img src="Images/person_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
-
-                    </div >
-                    <form class="formulaire__form">
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Préfixe">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Prenom">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Deuxième prénom">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Nom">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Suffixe">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Prénom phonétique">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="2e prénom phonétique">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Nom phonétique">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Pseudo">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Classer en tant que">
-                        </div>
-                    </form>
-                </div>
-                <div class="ajouterContact__formulaire">
-                    <div class="formulaire__img">
-                        <img src="Images/gg--organisation.svg" alt="img__person" >
-                    </div >
-                    <form class="formulaire__form">
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Entreprise">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Fonction">
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="prenom" id="prenom" placeholder="Service">
-                        </div>
-                    </form>
-                </div>
-                <div>
+            
+                    <div class = "ajouterContact__photo">
+                        <img src="Images/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png" alt="" class="img__photo">
+                        <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz.svg" alt=""  class="img__btn">
+                    </div>
+                    <div class="ajouterContact__libelle">
+                        <a href="#" class="libelle__btn">
+                            <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz2.svg" alt="">
+                            <span>Libellé</span>
+                        </a>
+                        
+                    </div>
+                  
                     <div class="ajouterContact__formulaire">
                         <div class="formulaire__img">
-                            <img src="Images/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
+                            <img src="Images/person_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
+    
                         </div >
                         <form class="formulaire__form">
                             <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="E-mail">
+                                <input type="text" name="prenom" id="prenom" placeholder="Préfixe">
                             </div>
-                        </form>
-                        <form class="formulaire__form">
-                            <div class="ajouterAdressemail">
-                                <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
-                                <span>Ajouter une adresse e-mail</span>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Prenom">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Deuxième prénom">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Nom">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Suffixe">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Prénom phonétique">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="2e prénom phonétique">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Nom phonétique">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Pseudo">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Classer en tant que">
                             </div>
                         </form>
                     </div>
-                </div>
-                <div>
                     <div class="ajouterContact__formulaire">
                         <div class="formulaire__img">
-                            <img src="Images/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
+                            <img src="Images/gg--organisation.svg" alt="img__person" >
                         </div >
                         <form class="formulaire__form">
                             <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="E-mail">
+                                <input type="text" name="prenom" id="prenom" placeholder="Entreprise">
                             </div>
-                        </form>
-                        <form class="formulaire__form">
-                            <div class="ajouterAdressemail">
-                                <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
-                                <span>Ajouter un numéro de télèphone</span>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Fonction">
+                            </div>
+                            <div class="form__input">
+                                <input type="text" name="prenom" id="prenom" placeholder="Service">
                             </div>
                         </form>
                     </div>
+                    <div>
+                        <div class="ajouterContact__formulaire">
+                            <div class="formulaire__img">
+                                <img src="Images/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
+                            </div >
+                            <form class="formulaire__form">
+                                <div class="form__input">
+                                    <input type="text" name="prenom" id="prenom" placeholder="E-mail">
+                                </div>
+                            </form>
+                            <form class="formulaire__form">
+                                <div class="ajouterAdressemail">
+                                    <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                                    <span>Ajouter une adresse e-mail</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ajouterContact__formulaire">
+                            <div class="formulaire__img">
+                                <img src="Images/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
+                            </div >
+                            <form class="formulaire__form">
+                                <div class="form__input">
+                                    <input type="text" name="prenom" id="prenom" placeholder="E-mail">
+                                </div>
+                            </form>
+                            <form class="formulaire__form">
+                                <div class="ajouterAdressemail">
+                                    <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                                    <span>Ajouter un numéro de télèphone</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-               
+            </section>
+            <section class="container__contacts">
+                <h1>Contacts</h1>
+                <table>
+                    <tr>
+                        <th>Titre</th>
+                        <th>E-mail</th>
+                        <th>Numéro de télèphone</th>
+                        <th>Fonction et entreprise</th>
+                        <th>Libellés</th>
+                    </tr>
+                    <tr>
+                        <th>Titre</th>
+                        <th>E-mail</th>
+                        <th>Numéro de télèphone</th>
+                        <th>Fonction et entreprise</th>
+                        <th>Libellés</th>
+                    </tr>
+                </table>
                 
-                
-                   
-                   
 
-            </div>
-            <div></div>
+            </section>
+           
+
+
+
+
+
+
+
+
+
         </section>
+    
         
+        
+       
+       
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

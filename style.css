@@ -46,7 +46,7 @@ a{
 	align-items: center;
     width: 260px;
     height: 39px;
-    gap: px;
+    gap: 10px;
     padding: 11px 17px 11px 17px;
     
 }
@@ -58,7 +58,7 @@ a{
 .input__control{
     display: flex;
     align-items: center;
-    max-width: 800px;
+    max-width: 700px;
     height: 50px;
     background-color: #f4f4f4;
     border-radius: 6px;
@@ -144,6 +144,9 @@ a{
 .complement__btn2--modif{
     background-color: #f0f8ff;
 }
+.complement__btn2--modif:hover{
+background-color:#EEF0F2;
+}
 .complement__btn3{
     display: flex;
 	justify-content:space-between;
@@ -168,7 +171,31 @@ a{
     width: 85%;
     height: 100%;
 }
-
+.creer{
+    display: none;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px 2px;
+}
+.creer__btn{
+    display: flex;
+	justify-content:;
+	align-items: center;
+    gap: 16px;
+    background-color: #c2E7FF;
+    width: 230px;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+    
+    
+    padding-left: 20px;
+}
+.creer :hover{
+    background-color: #f0f8ff;
+}
 .ajouterContact{
     width: 70%;
     height: 100%;
@@ -180,6 +207,7 @@ a{
     height: 50px;
     margin-left: 45px;
     margin-top: 40px;
+    width: 52%;
     
 }
 .enregistrer__etoil{
@@ -294,7 +322,7 @@ a{
 .formulaire__form{
     
     grid-column: 2;
-    width: 100%;
+    width: 50%;
     
 }
   
@@ -321,3 +349,11 @@ a{
    
     padding-left: 20px;
 }
+.container__contacts{
+    display: flex;
+    background-color: #046FFB;
+    border-radius: 20px;
+    width: 85%;
+    height: 100%;
+}
+
