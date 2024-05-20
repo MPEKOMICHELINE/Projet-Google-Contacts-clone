@@ -12,6 +12,17 @@ const enregistrerImg = document.querySelector('#enregistrer__img');
 const libelleBtn = document.querySelector('.libelle__btn ');
 const keyboardKey = document.querySelector('.keyboard__key');
 const Keyboard = document.querySelector('.keyboard__key');
+const complementLibelle = document.querySelector('.complement__libelle');
+const creerLibelleBtn = document.querySelector('#creerLibelle__btn');
+const bloccreerLibelle = document.querySelector('.bloc__creerLibelle');
+const btnClose = document.querySelector('#btn__close');
+const btnEnregistre = document.querySelector('#btn__enregistre');
+
+
+
+
+
+
 
 
 function visibiliteMenu() {
@@ -56,8 +67,18 @@ function visibiliteKeyboard(){
 
 }
 
+function visibiliteCreerlibelle(){
+  bloccreerLibelle.style.visibility = "visible"
+}
 
 
+function visibiliteClose(){
+  bloccreerLibelle.style.visibility = "hidden"
+
+}
+
+
+btnClose.addEventListener('click',visibiliteClose)
 Keyboard.addEventListener('click',visibiliteKeyboard)
 enregistrerImg.addEventListener('click',buttonFleche)
 complementBtn2.addEventListener('click',hideContactForm)

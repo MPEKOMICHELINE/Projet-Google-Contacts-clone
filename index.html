@@ -8,6 +8,21 @@
     <title>Google Contacts</title>
 </head>
 <body>
+    <div class="bloc__creerLibelle">
+        <div class="complement__libelle">
+            <span class="titre3">Créer un libellé</span>
+            <div class="container_fieldset">
+                <fieldset class="btn__fieldset">
+                    <legend>Nouveau libellé</legend>
+                    <input type="text">
+                  </fieldset>
+            </div>
+            <div class="titre2">
+                <div class="titre4" id="btn__close">Non, ne rien faire</div>
+                <div class="titre4" id="btn__enregistre">Enregistrer</div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <section class="header__container">
             <div class="container__nav">
@@ -49,8 +64,18 @@
             </div>
             <div class="complement__btn3">
                 <span>Libellés</span>
-                <img src="Images/align_flex_center_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt="">
+                <img src="Images/align_flex_center_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt=""  class="enregistrer__img" id="creerLibelle__btn" onclick="visibiliteCreerlibelle()">
+                </div>
             </div>
+            <div class="complement__btn2 complement__btn2--modif">
+                <img src="Images/material-symbols-light--label.svg" alt="">
+                <span>Fréquents</span>
+                <div class="icone">
+                    <img src="Images/edit_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enre__img">
+                    <img src="Images/mdi--trash-can-outline.svg" alt="" class="enre__img">
+                </div>
+            </div>
+            
         </section>
         <section class="container__creer">
             <section class="containerCreer___contacts">
@@ -90,34 +115,10 @@
                         </div >
                         <form class="formulaire__form">
                             <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Préfixe">
-                            </div>
-                            <div class="form__input">
                                 <input type="text" name="prenom" id="prenom" placeholder="Prenom">
                             </div>
                             <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Deuxième prénom">
-                            </div>
-                            <div class="form__input">
                                 <input type="text" name="prenom" id="prenom" placeholder="Nom">
-                            </div>
-                            <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Suffixe">
-                            </div>
-                            <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Prénom phonétique">
-                            </div>
-                            <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="2e prénom phonétique">
-                            </div>
-                            <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Nom phonétique">
-                            </div>
-                            <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Pseudo">
-                            </div>
-                            <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Classer en tant que">
                             </div>
                         </form>
                         <div class="formulaire__img ">
@@ -136,9 +137,6 @@
                             </div>
                             <div class="form__input">
                                 <input type="text" name="prenom" id="prenom" placeholder="Fonction">
-                            </div>
-                            <div class="form__input">
-                                <input type="text" name="prenom" id="prenom" placeholder="Service">
                             </div>
                         </form>
                         <div class="formulaire__img ">

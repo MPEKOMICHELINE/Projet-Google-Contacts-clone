@@ -116,13 +116,14 @@ a{
     gap: 10px;
     background-color: #c2E7FF;
     width: 160px;
-    height: 45px;
+    height: 60px;
     cursor: pointer;
     border-radius: 16px;
     font-size: 14px;
     color: black;
     margin-bottom: 20px;
     margin-left: 17px;
+    
 
 }
 .complement__btn2{
@@ -131,8 +132,6 @@ a{
 	align-items: center;
     gap: 16px;
     background-color: #c2E7FF;
-    width: 230px;
-    height: 37px;
     cursor: pointer;
     border-radius: 16px;
     font-size: 14px;
@@ -140,6 +139,9 @@ a{
     margin-bottom: 20px;
     margin-left: 17px;
     padding-left: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
 }
 .complement__btn2--modif{
     background-color: #f0f8ff;
@@ -340,6 +342,10 @@ top: 10px;
 }
   
 
+.titre3{
+    font-weight: bold;
+    font-size: 20px;
+}
 .form__input input{
     width: 90%;
     padding: 8px;
@@ -463,8 +469,98 @@ input{
 }
 
 
-
-
+.bloc__creerLibelle{
+    background-color: #1B263150;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.complement__libelle{
+    background-color: #dce3eb;
+    padding: 20px;
+    border-radius: 30px;
+    width: 30vh;
+    height: 20vh;
+    gap: 100px;
+}
 .container__complement__fill{
     width: 100%;
 }
+.container_fieldset{
+    padding-top: 20px;
+   
+}
+.titre3{
+    
+    font-size: 20px;
+}
+.btn__fieldset{
+    padding: 10px;
+    border-color: blue;
+    border-width: 3px;
+}
+.btn__fieldset legend{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.btn__fieldset input{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: 0;
+    border: 0;
+    color: #046FFB;
+    background-color: #dce3eb;
+}
+
+legend{
+    font-size: 12px;
+    color: rgba(3, 108, 245, 0.826)
+   
+}
+.titre2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #0b57d0;
+}
+.titre4{
+    background-color:#dce3eb;
+    padding: 15px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30px;
+    gap: 10px;
+}
+.titre4:hover{
+    background-color: #b8d0eb;
+}
+.icone{
+    display: flex;
+    background-color: #046FFB;
+    
+}
+.enre__img{
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.enre__img:hover {
+    background-color: #819ab3; /* Change la couleur de l'arrière-plan lors du survol */
+  }
