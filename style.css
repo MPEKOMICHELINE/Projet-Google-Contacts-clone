@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     padding: 21px 32px;
     align-items: flex-start;
+    background-color:#f0f8ff;
 }
 a{
     text-decoration: none;
@@ -24,7 +25,6 @@ a{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
     max-width: 2048px;
    
 }
@@ -94,14 +94,13 @@ a{
 /* ------------------------------------------------ main ----------------------------------------*/
 
 .main{
-    display: grid;
-	grid-template-columns: 250px 1fr;
+    display: flex;
+	flex-direction: row;
 	gap: 65px;
     margin-top: 30px;
     width: 100%;
     height: 100%;
-    align-items: center;
-
+    max-width: 2048px;
    
     
 }
@@ -109,6 +108,7 @@ a{
     width: 250px;
     height: 100%;
 }
+
 .complement__btn{
     display: flex;
 	justify-content: center;
@@ -165,21 +165,27 @@ background-color:#EEF0F2;
     font-weight: bold;
 }
 .container__creer{
-    grid-column: 2;
     background-color:white;
     border-radius: 20px;
-    width: 85%;
     height: 100%;
+    max-width: 2048px;
+    width: 100%;
+
+}
+.containerCreer___contacts{
+    display:none;
+    margin-bottom: 20px;
+    max-width: 2048px;
+
 }
 .creer{
     display: none;
     background-color:white;
     border-radius: 5px;
-    padding: 10px 2px;
+    padding: 0px 0px 0px 0px;
 }
 .creer__btn{
     display: flex;
-	justify-content:;
 	align-items: center;
     gap: 16px;
     background-color: #c2E7FF;
@@ -207,7 +213,7 @@ background-color:#EEF0F2;
     height: 50px;
     margin-left: 45px;
     margin-top: 40px;
-    width: 52%;
+    width: 70%;
     
 }
 .enregistrer__etoil{
@@ -241,6 +247,7 @@ background-color:#EEF0F2;
 }
 .ajouterContact__photo{
     margin-top: 10px;
+    position:relative;
     
 
 }
@@ -253,6 +260,13 @@ background-color:#EEF0F2;
     border-radius: 50%;
     border: 5px solid white;
 }
+.img__btn--modif{
+position:relative;
+right: 50px;
+left: 50x;
+top: 10px;
+}
+
 .ajouterContact__libelle{
     margin-top: 10px;
     display: flex;
@@ -284,6 +298,13 @@ background-color:#EEF0F2;
 .libelle__btn:hover {
     background-color: #EEF0F2; /* Change la couleur de l'arrière-plan lors du survol */
   }
+/*.creerlibelle{
+    background-color: #eaf1fa;
+    text-align: left;
+    padding: 15px 0px 15px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}*/
 
 .img__photo{
     width: 150px;
@@ -302,8 +323,9 @@ background-color:#EEF0F2;
 }
 .ajouterContact__formulaire{
     display: grid;
-	grid-template-columns: 45px 1fr;
+	grid-template-columns: 45px 1fr 45px;
     margin-left: 50px;
+   width: 70%;
    
 }
 .formulaire__img{
@@ -311,19 +333,10 @@ background-color:#EEF0F2;
     margin-top: 4px;
 
 }
-    
-.img__person{
-   
-    width: 35px;
-    height: 40px;
-    
 
-}
 .formulaire__form{
-    
     grid-column: 2;
-    width: 50%;
-    
+    width: 100%;
 }
   
 
@@ -351,9 +364,107 @@ background-color:#EEF0F2;
 }
 .container__contacts{
     display: flex;
-    background-color: #046FFB;
+    background-color: white;
     border-radius: 20px;
-    width: 85%;
-    height: 100%;
+    height: 100%;  
 }
 
+.keyboard{
+   background-color:white;
+   border-radius: 50%;
+   cursor: pointer;
+    }
+.keyboard:hover {
+    background-color: #EEF0F2; /* Change la couleur de l'arrière-plan lors du survol */
+}
+
+.keyboard__key{
+    display: none;
+}
+   
+
+.enregistrer__img:hover {
+    background-color: #EEF0F2; /* Change la couleur de l'arrière-plan lors du survol */
+}
+
+.content{
+flex-grow: 1;
+padding-left: 20px;
+box-sizing: border-box;
+
+}
+.table{
+    width: 100%;
+}
+.tableHead{
+display: flex;
+width: 100%;
+border-bottom: 1px solid rgb(207,207,207);
+color: rgb(110,110,110);
+padding-bottom: 13px;
+margin: 20px 0px;
+}
+.column{
+    flex-grow: 1;
+    font-size: 12px;
+    width: 25%;
+}
+.tableHead{
+    display: flex;
+    width: 100%;
+}
+.tableRow{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    min-height: 48px;
+}
+.column--modif{
+    font-size: 11px;
+    flex-grow: 1;
+    padding: 12px 0px;
+   
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.tableRow:hover{
+    background-color: rgb(241,241,241);
+    .checkbox{
+        display: flex;
+    }
+    .avatar{
+        display: none;
+    }
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: darkslateblue;
+    color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.checkbox{
+display: none;
+width: 30px;
+justify-content: center;
+align-items: center;
+}
+input{
+    cursor: pointer;
+}
+.column{
+
+}
+
+
+
+
+.container__complement__fill{
+    width: 100%;
+}

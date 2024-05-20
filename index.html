@@ -23,14 +23,14 @@
             </div>
         </section>
     </header>
-    <main class="main" id="main">
+    <main class="main">
         <section class="container__complement">
             <div class="complement__btn" id="complement__btn">
                 <img src="Images/align_flex_center_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt="">
                 <span>Créer un contact</span>
             </div>
-            <div class="creer">
-                <div class="creer__btn">
+            <!--<div class="creer contain">
+                <div class="creer__btn" id="creer__btn">
                     <img src="Images/person_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="img__person" >
                     <span>Créer un contact</span>
                 </div>
@@ -38,7 +38,7 @@
                     <img src="Images/group_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                     <span>Créer plusieurs contacts</span>
                 </div>
-            </div>
+            </div>-->
             <div class="complement__btn2">
                 <img src="Images/ic--baseline-person.svg" alt="">
                 <span>Contact</span>
@@ -52,11 +52,11 @@
                 <img src="Images/align_flex_center_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt="">
             </div>
         </section>
-        <section>
-            <section class="container__creer" id="container__creer">
+        <section class="container__creer">
+            <section class="containerCreer___contacts">
                 <div class="ajouterContact">
                     <div class="ajouterContact__enregistrer">
-                        <img src="Images/arrow_back_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enregistrer__img">
+                        <img src="Images/arrow_back_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enregistrer__img" id="enregistrer__img">
                         <div class="enregistrer__etoil">
                             <img src="Images/grade_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="enregistrer__img">
                             <span class="enregistrer__bnt">Enregistrer</span>
@@ -66,14 +66,21 @@
             
                     <div class = "ajouterContact__photo">
                         <img src="Images/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png" alt="" class="img__photo">
-                        <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz.svg" alt=""  class="img__btn">
+                        <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz.svg" alt=""  class="img__btn img__btn--modif">
                     </div>
                     <div class="ajouterContact__libelle">
                         <a href="#" class="libelle__btn">
                             <img src="Images/add_24dp_FILL0_wght400_GRAD0_opsz2.svg" alt="">
                             <span>Libellé</span>
                         </a>
-                        
+                        <!--<div class="creerlibelle">
+                            <p>Aucun libellé</p>
+                            <p>Clique sur "Créer un libellé" pour en créer un.</p>
+                            <div class="creer__btn" id="creer__btn">
+                                <img src="Images/align_flex_center_20dp_FILL0_wght400_GRAD0_opsz20.svg" alt="">
+                                <span>Créer un libellé</span>
+                            </div>
+                        </div>-->
                     </div>
                   
                     <div class="ajouterContact__formulaire">
@@ -113,6 +120,11 @@
                                 <input type="text" name="prenom" id="prenom" placeholder="Classer en tant que">
                             </div>
                         </form>
+                        <div class="formulaire__img ">
+                            <img src="Images/keyboard_arrow_down_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="keyboard">
+                            <img src="Images/keyboard_arrow_up_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="keyboard keyboard__key">
+
+                        </div>
                     </div>
                     <div class="ajouterContact__formulaire">
                         <div class="formulaire__img">
@@ -129,6 +141,10 @@
                                 <input type="text" name="prenom" id="prenom" placeholder="Service">
                             </div>
                         </form>
+                        <div class="formulaire__img ">
+                            <img src="Images/keyboard_arrow_down_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="keyboard">
+                            <img src="Images/keyboard_arrow_up_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="keyboard keyboard__key">
+                        </div>
                     </div>
                     <div>
                         <div class="ajouterContact__formulaire">
@@ -169,35 +185,57 @@
                 </div>
             </section>
             <section class="container__contacts">
-                <h1>Contacts</h1>
-                <table>
-                    <tr>
-                        <th>Titre</th>
-                        <th>E-mail</th>
-                        <th>Numéro de télèphone</th>
-                        <th>Fonction et entreprise</th>
-                        <th>Libellés</th>
-                    </tr>
-                    <tr>
-                        <th>Titre</th>
-                        <th>E-mail</th>
-                        <th>Numéro de télèphone</th>
-                        <th>Fonction et entreprise</th>
-                        <th>Libellés</th>
-                    </tr>
-                </table>
                 
+                <div class="content">
+                    <div class="table">
+                        <div class="tableHead">
+                            <div class="column">Titre</div>
+                            <div class="column">E-mail</div>
+                            <div class="column">Numéro de télèphone</div>
+                            <div class="column">Fonction et entreprise</div>
+                            <div class="column">Libellés</div>
+                        </div>
 
+                        <div class="tableBody">
+                            <div class="tableRow">
+                                <div class="column column--modif">
+                                    <div class="avatar">F</div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    Titre
+                                </div>
+                                <div class="column column--modif">E-mail</div>
+                                <div class="column column--modif">Numéro de télèphone</div>
+                                <div class="column column--modif">Fonction et entreprise</div>
+                                <div class="column column--modif">
+                                    <button>Bureau</button>
+                                    <button>Bureau</button>
+                                </div>
+                            </div>
+
+                            <div class="tableRow">
+                                <div class="column column--modif">
+                                    <div class="avatar">F</div>
+                                    <div class="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    Titre
+                                </div>
+                                <div class="column column--modif">E-mail</div>
+                                <div class="column column--modif">Numéro de télèphone</div>
+                                <div class="column column--modif">Fonction et entreprise</div>
+                                <div class="column column--modif">
+                                    <button>Bureau</button>
+                                    <button>Bureau</button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
             </section>
            
-
-
-
-
-
-
-
-
 
         </section>
     
@@ -206,6 +244,10 @@
        
        
     </main>
-    <script src="script.js"></script>
+    <script src="script.js">
+
+    </script>
+
+    
 </body>
 </html>
