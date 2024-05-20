@@ -17,6 +17,8 @@ const creerLibelleBtn = document.querySelector('#creerLibelle__btn');
 const bloccreerLibelle = document.querySelector('.bloc__creerLibelle');
 const btnClose = document.querySelector('#btn__close');
 const btnEnregistre = document.querySelector('#btn__enregistre');
+const complementBtn2id = document.querySelector('#complement__btn2');
+const textFieldset = document.querySelector('.text__fieldset');
 
 
 
@@ -76,8 +78,15 @@ function visibiliteClose(){
   bloccreerLibelle.style.visibility = "hidden"
 
 }
+function visibiliteBntlibelle(){
+  textFieldset.style.display="block"
+}
 
 
+
+
+
+btnEnregistre.addEventListener('click',visibiliteBntlibelle)
 btnClose.addEventListener('click',visibiliteClose)
 Keyboard.addEventListener('click',visibiliteKeyboard)
 enregistrerImg.addEventListener('click',buttonFleche)
